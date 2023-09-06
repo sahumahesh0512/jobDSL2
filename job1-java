@@ -1,7 +1,7 @@
 pipeline {
     agent none
     stages {
-        stage('Build') {
+        stage('job1-java') {
             agent {
                 // Use a custom Docker image for the 'build' stage
                 docker {
