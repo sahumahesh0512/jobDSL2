@@ -1,15 +1,13 @@
 pipeline {
-    agent none
+    agent {
+        // Use a Docker image for the entire pipeline
+        docker {
+            image 'maven:3.6.3-openjdk-17-slim'
+            args '-v $HOME/.m2:/root/.m2'
+        }
+    }
     stages {
         stage('job1-java') {
-            agent {
-                // Use a custom Docker image for the 'build' stage
-                docker any {
-                 
-                    image 'maven:3.6.3-openjdk-17-slim'
-                    args '-v $HOME/.m2:/root/.m2'
-                }
-            }
             steps {
                 sh 'mvn --version'
             }
