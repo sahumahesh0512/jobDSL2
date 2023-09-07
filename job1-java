@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('job1-java') {
             agent {
-                 
-                   docker_image 'maven:3.6.3-openjdk-17-slim'
+                docker {
+                    image 'maven:3.6.3-openjdk-17-slim'
                     args '-v $HOME/.m2:/root/.m2'
                 }
             }
@@ -13,5 +13,6 @@ pipeline {
             }
         }
     }
+}
 
 
