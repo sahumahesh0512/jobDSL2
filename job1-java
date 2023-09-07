@@ -4,7 +4,8 @@ pipeline {
         stage('job1-java') {
             agent {
                 // Use a custom Docker image for the 'build' stage
-                docker {
+                docker any {
+                 
                     image 'maven:3.6.3-openjdk-17-slim'
                     args '-v $HOME/.m2:/root/.m2'
                 }
