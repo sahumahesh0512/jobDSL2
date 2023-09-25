@@ -13,7 +13,7 @@ folder('JOBDSL') {
                             url('https://github.com/sahumahesh0512/jobDSL2.git')
                         }
                         branches('*/main')
-                        scriptPath('job1-java/Jenkinsfile') // Path to Jenkinsfile in the repository
+                        scriptPath('job1-java') // Path to Jenkinsfile in the repository
                     }
                 }
             }
@@ -30,7 +30,7 @@ folder('JOBDSL') {
                             url('https://github.com/sahumahesh0512/jobDSL2.git')
                         }
                         branches('*/main')
-                        scriptPath('job2-javascript/Jenkinsfile') // Path to Jenkinsfile in the repository
+                        scriptPath('job2-javascript') // Path to Jenkinsfile in the repository
                     }
                 }
             }
@@ -47,7 +47,7 @@ folder('JOBDSL') {
                             url('https://github.com/sahumahesh0512/jobDSL2.git')
                         }
                         branches('*/main')
-                        scriptPath('job3-Ruby/Jenkinsfile') // Path to Jenkinsfile in the repository
+                        scriptPath('job3-Ruby') // Path to Jenkinsfile in the repository
                     }
                 }
             }
