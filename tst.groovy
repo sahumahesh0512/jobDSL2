@@ -1,49 +1,56 @@
-folder name ('JOBDSL') {
-display name ('JOBDSL')
+// Create a folder named "JOBDSL"
+folder('JOBDSL') {
+    displayName('JOBDSL')
 
-pipelineJob('JOBDSL/job1-java') {
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url('https://github.com/sahumahesh0512/jobDSL2.git')
+    // Define pipeline jobs inside the folder
+    pipelineJob('job1-java') {
+        displayName('Job 1 - Java')
+        definition {
+            cpsScm {
+                scm {
+                    git {
+                        remote {
+                            url('https://github.com/sahumahesh0512/jobDSL2.git')
+                        }
+                        branches('*/main')
+                        scriptPath('job1-java/Jenkinsfile') // Path to Jenkinsfile in the repository
                     }
-                    branches('*/main') // Configure the branch patterns to build
-                    scriptPath('job1-java') // Specify the location of the Jenkinsfile in your repository
                 }
             }
         }
     }
-}
-pipelineJob('JOBDSL/job2-javascript') {
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url('https://github.com/sahumahesh0512/jobDSL2.git')
+
+    pipelineJob('job2-javascript') {
+        displayName('Job 2 - JavaScript')
+        definition {
+            cpsScm {
+                scm {
+                    git {
+                        remote {
+                            url('https://github.com/sahumahesh0512/jobDSL2.git')
+                        }
+                        branches('*/main')
+                        scriptPath('job2-javascript/Jenkinsfile') // Path to Jenkinsfile in the repository
                     }
-                    branches('*/main') // Configure the branch patterns to build
-                    scriptPath('job2-javascript')   
                 }
             }
         }
     }
-}
-pipelineJob('JOBDSL/job3-Ruby') {
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url('https://github.com/sahumahesh0512/jobDSL2.git')
+
+    pipelineJob('job3-Ruby') {
+        displayName('Job 3 - Ruby')
+        definition {
+            cpsScm {
+                scm {
+                    git {
+                        remote {
+                            url('https://github.com/sahumahesh0512/jobDSL2.git')
+                        }
+                        branches('*/main')
+                        scriptPath('job3-Ruby/Jenkinsfile') // Path to Jenkinsfile in the repository
                     }
-                    branches('*/main') // Configure the branch patterns to build
-                    scriptPath('job3-Ruby')
                 }
             }
         }
     }
-}
 }
