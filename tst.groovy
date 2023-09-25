@@ -4,7 +4,7 @@ folder('JOBDSL') {
 
     // Define pipeline jobs inside the folder
     pipelineJob('job1-java') {
-        displayName('Job 1 - Java')
+        displayName('JOBDSL/Job 1 - Java')
         definition {
             cpsScm {
                 scm {
@@ -21,7 +21,7 @@ folder('JOBDSL') {
     }
 
     pipelineJob('job2-javascript') {
-        displayName('Job 2 - JavaScript')
+        displayName('JOBDSL/Job 2 - JavaScript')
         definition {
             cpsScm {
                 scm {
@@ -38,7 +38,7 @@ folder('JOBDSL') {
     }
 
     pipelineJob('job3-Ruby') {
-        displayName('Job 3 - Ruby')
+        displayName('JOBDSL/Job 3 - Ruby')
         definition {
             cpsScm {
                 scm {
