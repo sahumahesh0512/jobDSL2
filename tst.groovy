@@ -1,5 +1,5 @@
-folder name (JOBDSL){
-display name (JOBDSL)
+folder name ('JOBDSL') {
+display name ('JOBDSL')
 }
 pipelineJob('JOBDSL/job1-java') {
     definition {
