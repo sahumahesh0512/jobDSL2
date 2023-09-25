@@ -1,6 +1,6 @@
 folder name ('JOBDSL') {
 display name ('JOBDSL')
-}
+
 pipelineJob('JOBDSL/job1-java') {
     definition {
         cpsScm {
@@ -45,4 +45,5 @@ pipelineJob('JOBDSL/job3-Ruby') {
             }
         }
     }
+}
 }
