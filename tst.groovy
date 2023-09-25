@@ -1,3 +1,6 @@
+folder name {JOBDSL}
+display name {JOBDSL}
+
 pipelineJob('job1-java') {
     definition {
         cpsScm {
