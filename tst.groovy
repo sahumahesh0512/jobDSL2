@@ -1,7 +1,7 @@
-folder name {JOBDSL}
-display name {JOBDSL}
-
-pipelineJob('job1-java') {
+folder name (JOBDSL){
+display name (JOBDSL)
+}
+pipelineJob('JOBDSL/job1-java') {
     definition {
         cpsScm {
             scm {
@@ -16,7 +16,7 @@ pipelineJob('job1-java') {
         }
     }
 }
-pipelineJob('job2-javascript') {
+pipelineJob('JOBDSL/job2-javascript') {
     definition {
         cpsScm {
             scm {
@@ -31,7 +31,7 @@ pipelineJob('job2-javascript') {
         }
     }
 }
-pipelineJob('job3-Ruby') {
+pipelineJob('JOBDSL/job3-Ruby') {
     definition {
         cpsScm {
             scm {
